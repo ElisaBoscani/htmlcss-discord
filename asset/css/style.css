@@ -29,9 +29,10 @@ footer {
 
 /* utility */
 :root {
-  --hd--nav: #d8d9db;
-  --hd--navcont: #bcbcbe;
-  --hd--navlink: #d9827d;
+  --light--: #ffffff;
+  --hd--nav: #3161e0;
+  --hd--navcont: #3161e0;
+  --hd--navlink: #d9e3fa;
   --hd--center: #95a8e3;
   --hd--center--cont: #abaebd;
   --sec--container: #fbdb9e;
@@ -44,26 +45,22 @@ footer {
   --fo--col: #80d7ac;
   --fo--link: #d5b27a;
 }
-.border {
+/* .border {
   border: 3px dashed black;
-}
+} */
 .d_flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.padding {
-  padding-top: 20px;
-}
 
 /* style top page */
 
 header div {
-  background-color: var(--hd--navcont);
+  /* background-color: var(--hd--navcont); */
   height: 100%;
 }
 .row_nav {
-  background-color: var(--hd--navlink);
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -76,6 +73,19 @@ header div {
   margin: auto;
   display: flex;
   align-items: center;
+}
+a {
+  padding: 0 20px;
+  color: var(--hd--navlink);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.enter {
+  background-color: var(--light--);
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 1.25rem;
 }
 /* main */
 .container_content {
