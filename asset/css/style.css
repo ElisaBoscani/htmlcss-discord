@@ -20,19 +20,13 @@ span {
   height: 100%;
   border: 3px dashed black;
 }
-main section {
-  height: 400px;
-}
-main section:nth-child(2) {
-  height: 600px;
-}
+
 footer {
   height: 400px;
   background-color: var(--fo--bg);
 }
 p {
   line-height: 1.5rem;
-  font-size: 0.8rem;
 }
 h1,
 p {
@@ -42,6 +36,7 @@ h1,
 h2 {
   padding-bottom: 0.625rem;
   font-size: 2.1875rem;
+  font-weight: 800;
 }
 /* /endglobal */
 
@@ -51,7 +46,21 @@ h2 {
 .debug .col_2 {
   background-color: var(--sec--col);
 }
-
+.debug .border {
+  border: 3px dashed black;
+}
+.debug section {
+  height: 400px;
+}
+.debug main section:nth-child(2) {
+  height: 600px;
+}
+.debug .card {
+  background-color: var(--sec--card);
+}
+.debug .height {
+  height: 500px;
+}
 :root {
   --dark--: #000000;
   --light--: #ffffff;
@@ -68,6 +77,8 @@ h2 {
   --fo--row: #d5d1da;
   --fo--col: #80d7ac;
   --fo--link: #d5b27a;
+  --bg--wave: #f6f6f6;
+  --last--button: #8ea1e1;
 }
 .container {
   width: 80%;
@@ -131,14 +142,6 @@ a {
   background-color: var(--sec--container);
 }
 
-/* .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--sec--row);
-  margin-top: 5rem;
-} */
-
 .col {
   width: 60%;
 }
@@ -148,24 +151,52 @@ a {
   padding: 3.125rem;
 }
 
-.debug .card {
-  background-color: var(--sec--card);
-}
-
 .align_top {
   align-items: flex-start;
-  gap: 1.875rem;
+  gap: 7rem;
   margin-top: 3.125rem;
 }
+.mrg_botton {
+  margin-bottom: 11.125rem;
+}
+/* #end section */
+/* wave */
+.wave {
+  height: 7rem;
+  background-image: url(/asset/img/wave.svg);
+  opacity: 3%;
+}
+.wave_botton {
+  rotate: 180deg;
+  height: 7rem;
+  background-image: url(/asset/img/wave.svg);
+  opacity: 3%;
+}
+.opacity {
+  background-color: var(--bg--wave);
+  margin-top: -3.12rem;
+}
+/* #end wave */
 
-/* last section */
 main section:last-child {
-  height: 700px;
+  background-color: var(--bg--wave);
 }
 .height {
-  height: 500px;
+  padding-top: 6.125rem;
+  text-align: center;
 }
-
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.9375rem;
+}
+.height button {
+  background-color: var(--last--button);
+  color: var(--hd--navlink);
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  margin-bottom: 7.125rem;
+}
 /* end main */
 /* footer link */
 .cont_footer {
