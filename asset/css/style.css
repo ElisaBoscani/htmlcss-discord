@@ -292,6 +292,7 @@ li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 3.125rem;
 }
 .registered {
   background-color: var(--last--button);
