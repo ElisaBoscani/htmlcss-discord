@@ -76,6 +76,14 @@ h2 {
 .debug .row_footer div:first-child {
   background-color: var(--fo--col);
 }
+.debug .sidebar span {
+  background-color: var(--fo--link);
+  height: 85%;
+}
+.debug .sidebar {
+  background-color: var(--fo--row);
+  height: 45px;
+}
 :root {
   --dark--: #000000;
   --light--: #ffffff;
@@ -228,7 +236,10 @@ h3 {
 .pdg_top {
   padding-top: 3.125rem;
 }
-
+.row_footer {
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--fo--text);
+}
 .row_footer > div {
   width: 19%;
 }
@@ -275,15 +286,14 @@ li a {
 }
 /* end footer link */
 /* footer sidebar*/
+
 .sidebar {
-  background-color: var(--fo--row);
-  height: 45px;
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sidebar span {
-  background-color: var(--fo--link);
-  height: 85%;
+.registered {
+  background-color: var(--last--button);
+  color: var(--hd--navlink);
 }
